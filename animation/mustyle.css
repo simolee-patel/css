@@ -1,0 +1,75 @@
+svg {
+  margin-left: 20%;
+}
+@keyframes tree {
+  from {
+    transform: scalex(2);
+  }
+  to {
+    transform: scalex(100px);
+  }
+}
+@keyframes stree {
+  from {
+    transform: scalex(0.8);
+  }
+  to {
+    transform: scalex(100px);
+  }
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+#Vector2,
+#Vector3 {
+  animation: flash 3s ease infinite;
+}
+#bigtree {
+  animation: flash 3s ease infinite;
+}
+#girl {
+  animation: shake 7s ease infinite;
+}
+
+#smalltree {
+  animation: flash 2s ease infinite;
+}
+#Vector5,
+#Vector7 {
+  animation: flash 9s ease infinite;
+}
+#Vector4,
+#Vector6 {
+  animation: flash 4s ease infinite;
+}
