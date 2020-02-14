@@ -1,0 +1,55 @@
+svg {
+  height: 40%;
+  width: 40%;
+  align-content: center;
+  position: relative;
+  margin-left: 30%;
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+#sun {
+  animation: shake 10s ease infinite;
+}
+
+#lea,
+#lea_2,
+#lea_4,
+#lea_5,
+#lea_8,
+#lea_10 {
+  animation: shake 5s ease infinite;
+}
+
+#lea_3,
+#lea_6,
+#lea_7,
+#lea_9,
+#lea_11,
+#lea_12 {
+  animation: shake 8s ease infinite;
+}
+
+#lea_13,
+#lea_14,
+#lea_15 {
+  animation: shake 8s ease infinite;
+}
